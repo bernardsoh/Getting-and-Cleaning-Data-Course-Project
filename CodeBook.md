@@ -1,13 +1,13 @@
-#Code Book
+# Code Book
 This is the code book for the TidyData set created when the run_analysis_R script is run
 
-#Data Set Variables
-##Generated fields
+# Data Set Variables
+## Generated fields
 SubjectID (integer) - ID of subject performing the activity. Ranges from 1-30 (integer)
 
 Activity (factor)- Activity the subject is performing. 6 possible values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
-
-##Measurement variables
+[test](google.com)
+## Measurement variables
 Each variable is the mean value of all measurements recorded for that variable for each subject and activity.
 
  [1] "TimeBodyAccelerometerelerometerMean()-X"                           "TimeBodyAccelerometerelerometerMean()-Y"                          
