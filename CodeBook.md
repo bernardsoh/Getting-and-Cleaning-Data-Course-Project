@@ -1,13 +1,26 @@
-# Code Book
+## Code Book
 This is the code book for the TidyData set created when the run_analysis_R script is run
 
-# Data Set Variables
-## Generated fields
+## Course Project Introduction
+The script `run_analysis.R` uses the `data.table` package for renaming column and reading in files. It performs 5 major steps including:
+1. Merges the training and the test sets to create one data set. (In the following the word data means both train and test). The `x_data.txt`, `y_data.txt`, `subject_data.txt` should be binded by row, and after that all three of them should binded by column.
+
+2. Extracts only the measurements on the mean and standard deviation for each measurement. For the column of `x_data.txt`, extract only the ones that have mean() or std() in their names, compare it with `feature.txt`.
+
+3. Uses descriptive activity names to name the activities in the data set. Match each number in the `y_data` column with `activity_labels.txt`.
+
+4. Appropriately labels the data set with descriptive variable names. Rename the column of `y_data` and `subject_data`, instead of using the default name given by R.
+
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+## Data Set Variables
+
+### Generated fields
 SubjectID (integer) - ID of subject performing the activity. Ranges from 1-30 (integer)
 
 Activity (factor)- Activity the subject is performing. 6 possible values: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
-[test](google.com)
-## Measurement variables
+
+### Measurement variables
 Each variable is the mean value of all measurements recorded for that variable for each subject and activity.
 
  [1] "TimeBodyAccelerometerelerometerMean()-X"                           "TimeBodyAccelerometerelerometerMean()-Y"                          
